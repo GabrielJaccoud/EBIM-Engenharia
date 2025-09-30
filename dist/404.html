@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecionando...</title>
+    <script type="text/javascript">
+        // Single Page Apps for GitHub Pages
+        // MIT License
+        // https://github.com/rafgraph/spa-github-pages
+        // This script checks to see if a redirect is already in place
+        // If so, it removes the redirect and sets the path to the route we want to go to
+        // If not, it creates a redirect to the route we want to go to
+        (function() {
+            var redirect = sessionStorage.getItem("redirect");
+            if (redirect) {
+                sessionStorage.removeItem("redirect");
+                window.location.replace(redirect);
+            } else {
+                var path = window.location.pathname;
+                var hash = window.location.hash;
+                var search = window.location.search;
+                var url = path + search + hash;
+                sessionStorage.setItem("redirect", url);
+                window.location.replace("/EBIM-Engenharia/");
+            }
+        })();
+    </script>
+</head>
+<body>
+</body>
+</html>
+
