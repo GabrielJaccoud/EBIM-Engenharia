@@ -1,4 +1,3 @@
-import './App.css'
 import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin, Menu, X, CheckCircle, Users, Award, Lightbulb, Shield, Wrench, Factory, Cog, Building2, Droplet, Zap, Leaf, Clock } from 'lucide-react'
 import { useState } from 'react'
